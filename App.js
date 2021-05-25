@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import firstscreen from './screens/firstscreen';
+import FirstScreen from './screens/FirstScreen';
 import SecondScreen from './screens/SecondScreen';
 const Stack = createStackNavigator();
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen
           name={name}
-          component={firstscreen}
+          component={FirstScreen}
           option={() => ({
             headerStyle: {
               backgroundColor: '#892b2f',
