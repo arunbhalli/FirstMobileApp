@@ -22,7 +22,7 @@ const FirstScreen = ({ navigation }) => {
       <FlatList
         data={articles}
         renderItem={({ item }) => {
-          return <Article article={item} navigation={navigation} />;
+          return <Article testID='title' article={item} navigation={navigation} />;
         }}
       />
     </View>
